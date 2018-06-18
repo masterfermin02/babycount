@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -38,16 +39,23 @@ public class CountActivity extends AppCompatActivity implements BabyCount {
 
         Button btn = (Button) findViewById(R.id.btnOne);
         ImageButton btnReplay = (ImageButton) findViewById(R.id.btnReplay);
+        final GridView gridV = (GridView) findViewById(R.id.biberonGridview);
+        final BiberonAdapter biberonAdapter = new BiberonAdapter(this);
+        gridV.setAdapter(biberonAdapter);
         final TextView counter = (TextView) findViewById(R.id.lblCounter);
+
         btn.setOnClickListener(new View.OnClickListener(){
 
             public void onClick(View v){
                 count++;
-                if(count > COUNT_LIMIT)
+                if(count > COUNT_LIMIT) {
                     count = 1;
+                    biberonAdapter.resetBiberones();
+                }
                 strcount = String.valueOf(count);
                 counter.setText(strcount);
                 ttobj.speak(strcount, TextToSpeech.QUEUE_FLUSH, null);
+                biberonAdapter.addBiberon(count);
 
             }
 

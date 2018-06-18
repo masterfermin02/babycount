@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simpleTableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+    <!-- first row of the table layout-->
+    <TableRow
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="English" />
+
+        <Button
+            android:id="@+id/btnSpanish"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="Español" />
+
+    </TableRow>
+    <TableRow
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnChinies"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="China" />
+
+        <Button
+            android:id="@+id/btnJapan"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="Japan" />
+
+    </TableRow>
+
+</TableLayout>

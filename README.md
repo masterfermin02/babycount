@@ -8,8 +8,8 @@ You can just clone this repository and open it in Android Studio.
 For any questions, feedback, and bug reports, please use the [Github Issues](https://github.com/masterfermin02/babycount/issues).
 
 ## Credits
-Created by [Fermin Perdomo](https://masterfermin02.github.io/profile)
-Designed by [Brayan Mancebo](https://www.instagram.com/brayan_isaac/)
+* Created by [Fermin Perdomo](https://masterfermin02.github.io/profile)
+* Designed by [Brayan Mancebo](https://www.instagram.com/brayan_isaac/)
 
 ## Contributions
 Contributions are welcome. Please make a pull request.

@@ -56,5 +56,13 @@ public class MainActivity extends AppCompatActivity implements BabyCount {
             }
 
         });
+        china.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v){
+                activity.putExtra(LOCALE_KEY, Locale.CHINA);
+                startActivity(activity);
+            }
+
+        });
     }
 }

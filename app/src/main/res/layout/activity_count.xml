@@ -4,13 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorInfo"
     tools:context="com.babycount.fpapp.babycount.CountActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
+
         >
+        <TextView
+            android:id="@+id/lblCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/bubblegum"
+            android:layout_gravity="center"
+            android:textSize="45dp" />
         <GridView
             android:id="@+id/biberonGridview"
             android:layout_width="match_parent"
@@ -22,31 +32,35 @@
             android:stretchMode="columnWidth"
             android:gravity="center"
             />
-        <TextView
-            android:id="@+id/lblCounter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="cursive"
-            android:textSize="100sp"
-            android:layout_marginLeft="20dp"
-            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
             >
 
             <Button
                 android:id="@+id/btnOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/bubblegum"
+                android:background="@color/colorWarning"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"
                 android:text="Play"
                 />
             <ImageButton
                 android:id="@+id/btnReplay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/bubblegum"
+                android:textSize="30dp"
+                android:background="@color/colorWarning"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
                 android:src="@android:drawable/ic_menu_rotate" />
 
         </LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorInfo"
     tools:context="com.babycount.fpapp.babycount.MainActivity">
 
 
@@ -25,6 +26,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/select_a_language"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/bubblegum"
                 android:textSize="30dp"/>
         </LinearLayout>
     <LinearLayout
@@ -37,12 +40,22 @@
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_weight="1"
+            android:background="@color/colorWarning"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:fontFamily="@font/bubblegum"
             android:text="Español" />
         <Button
             android:id="@+id/btnEnglish"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_weight="1"
+            android:background="@color/colorWarning"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/bubblegum"
+            android:textSize="20dp"
             android:text="English" />
     </LinearLayout>
         <LinearLayout
@@ -55,22 +68,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_weight="1"
+                android:background="@color/colorWarning"
+                android:layout_margin="3dp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/bubblegum"
+                android:textSize="20dp"
                 android:text="Japan" />
             <Button
                 android:id="@+id/btnChinies"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_weight="1"
+                android:background="@color/colorWarning"
+                android:layout_margin="3dp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/bubblegum"
+                android:textSize="20dp"
                 android:text="China" />
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/biberon"
-            android:layout_gravity="center"/>
     </LinearLayout>
 
 

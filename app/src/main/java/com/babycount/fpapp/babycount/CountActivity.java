@@ -24,7 +24,7 @@ public class CountActivity extends AppCompatActivity implements BabyCount {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_count);
 
-        final Bundle parameter = getIntent().getExtras();
+       /* final Bundle parameter = getIntent().getExtras();
 
         ttobj = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -69,7 +69,7 @@ public class CountActivity extends AppCompatActivity implements BabyCount {
 
             }
 
-        });
+        });*/
     }
 
     @Override

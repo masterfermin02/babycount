@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.babycount.fpapp.babycount.Counts.GameActivity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements BabyCount {
         Button english = (Button) findViewById(R.id.btnEnglish);
         Button china = (Button) findViewById(R.id.btnChinies);
         Button japan = (Button) findViewById(R.id.btnJapan);
-        activity = new Intent(MainActivity.this, CountActivity.class);
+        activity = new Intent(MainActivity.this, GameActivity.class);
         final Locale localeSpanish = new Locale("es", "ES");
 
         spanish.setOnClickListener(new View.OnClickListener(){
